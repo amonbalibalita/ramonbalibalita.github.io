@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(25,12,41);
+            }
+            .slider{
+                position: relative;
+                width: 60%;
+            }
+            .images{
+                display: flex;
+                width: 100%;
+                overflow: hidden;
+            }
+            .images img{
+                height: 400px;
+                width: 100%;
+                transition: all 0.15s ease;
+            }
+            .images input{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="images">
+                <input type="radio" name="slide" id="img1" checked>
+                <input type="radio" name="slide" id="img2">
+                <img src="amon.jpg" class="m1" alt="img1">
+                <img src="profile.jpg" class="m2" alt="img2">
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+            </div>
+        </div>
+    </body>
+</html>
